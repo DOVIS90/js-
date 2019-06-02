@@ -1,0 +1,27 @@
+Js编码规范
+•	一定会有一个人，山高路远，为你而来
+•	Switch下的case和default必须增加一个缩进层级
+•	二元运算符两侧必须有一个空格，一元运算符和操作对象之间不允许有空格
+o	Ex: var a = !arr.length; a++; a = b + c;
+•	{前必须有一个空格
+•	If/else/for/while/function/switch/do/try/catch/finally关键字后，必须有一个空格
+•	对象创建的时候，：之后必须有空格，：之前不能有空格
+•	函数声明、具名函数表达式、函数调用中，函数名和（之间不允许有空格
+•	，和；前不允许有空格
+在函数调用、函数声明、括号表达式、属性访问、if/for/while/switch/catch等语句中，() 和 [] 内紧贴括号部分不允许有空格。
+•	引号的使用，单引号优先，没有嵌套的情况下，不要使用双引号
+用 === 代替 == ，因为 == 多了一步数据转换。但是当在 if (a!=undefiend) {}条件中，a!=undefined同时有a!=undefined 和 a !=null的意思。
+•	同一个连写方法很长要换行的问题，比如说三元运算符，jq中的连缀。当换行的时候，运算符要位于行首
+•	注释问题：一定要与前一块内容空一行。并且，// 后要有一个空格
+开头问题：不要（ [ ` 开头。要在开头之前加上;   ex: 
+;(function () {window.alert('ok')}())
+　　　　;[1, 2, 3].forEach(bar)　　　　
+　　　　;`hello`.indexOf('o')
+•	 超过80个字符的链接问题。要记得换行（尽量不要拼接，太low）.可以用循环或者join方法来构建
+对数字使用paseInt转换时，要带上类型转换的基数。Ex: var val = parseInt(inputValue, 10);
+布尔值转换的时候，用Boolean或者!!; var  hasAge = Boolean(age);     var hasAge = !!age;
+•	命名问题。命名私有变量的时候，要在私有属性的前面加上_
+
+
+
+
